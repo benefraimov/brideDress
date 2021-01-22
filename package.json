@@ -1,0 +1,32 @@
+{
+  "name": "mern-auth-back",
+  "version": "1.0.0",
+  "description": "BeBride application - Mediation between designer and customers",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix mern-auth-front",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix mern-auth-front",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix mern-auth-front && npm run build --prefix mern-auth-front"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.23.0",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
+    "multer": "^1.4.2",
+    "node-sass": "^5.0.0",
+    "path": "^0.12.7",
+    "swiper": "^6.4.6"
+  }
+}
