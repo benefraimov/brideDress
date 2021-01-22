@@ -1,5 +1,5 @@
 {
-  "name": "mern-auth-back",
+  "name": "server",
   "version": "1.0.0",
   "description": "BeBride application - Mediation between designer and customers",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "node": "12.x"
   },
   "scripts": {
-    "client-install": "npm install --prefix mern-auth-front",
+    "client-install": "npm install --prefix client",
     "server": "nodemon index.js",
-    "client": "npm start --prefix mern-auth-front",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix mern-auth-front && npm run build --prefix mern-auth-front"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "Ben Efraimov",
@@ -28,10 +28,8 @@
     "mongoose": "^5.11.12",
     "multer": "^1.4.2",
     "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "swiper": "^6.4.6"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
   }
 }
