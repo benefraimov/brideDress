@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "Ben Efraimov",
-  "license": "MIT",
+  "license": "SIC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.23.0",
