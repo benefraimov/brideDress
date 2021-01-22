@@ -2,12 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require("dotenv").config();
-const config = require('config')
 const path = require('path')
 
 // set up express
 const app = express();
-app.use(express.json());
+
 app.use(cors());
 
 // set up mongoose
@@ -24,6 +23,7 @@ mongoose.connect(
         console.log("MongoDB connection establish");
     }
 );
+app.use(express.json());
 
 // set up routes
 app.use("/users", require("./routes/userRouter"));
