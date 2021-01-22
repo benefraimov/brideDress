@@ -1,3 +1,0 @@
-[submodule "client"]
-	path = client
-	url = https://git.heroku.com/bebride.git
