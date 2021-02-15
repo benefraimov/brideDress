@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const auth = require('../middleware/auth')
-const Todo = require('../models/todoModel')
+const Todo = require('../designerModels/todoModel')
 
 router.post('/', auth, async (req, res) => {
     try {

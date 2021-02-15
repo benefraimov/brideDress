@@ -9,7 +9,7 @@ module.exports = multer({
 
         if(ext !== ".jpg" && ext !== ".jpeg" && ext !== ".png" && ext !== ".JPG"){
             cb(new Error("File type is nout supported"), false);
-            return
+            return Error
         }
         cb(null, true)
     }
